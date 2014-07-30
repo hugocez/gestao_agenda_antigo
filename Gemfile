@@ -34,6 +34,11 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bcrypt-ruby', '3.1.2'
 
+gem 'faker','~> 1.2' 
+
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
