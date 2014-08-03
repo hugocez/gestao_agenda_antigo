@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bcrypt-ruby', '3.1.2'
 
+gem 'validates_cpf_cnpj'
+
 gem 'faker','~> 1.2' 
 
 gem 'will_paginate', '3.0.4'

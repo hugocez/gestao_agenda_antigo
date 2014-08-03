@@ -1,0 +1,13 @@
+
+
+<%= form_for(@funcionario) do |f| %>
+  	
+	<%= render 'error_messages'%>
+	
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  
+  
+    <%= f.submit "Incluir Funcionario", class: "btn btn-large btn-primary"%>
+  
+<% end %>

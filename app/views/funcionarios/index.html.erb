@@ -1,0 +1,12 @@
+<% provide(:title, 'Lista de Funcionarios') %>
+<h1>Lista de funcionarios</h1>
+
+<%= will_paginate %>
+
+<ul class="funcionarios">
+  	<%= render @funcionarios %>
+</ul>
+
+<%= will_paginate %>
+
+<%= link_to 'New Funcionario', new_funcionario_path %>

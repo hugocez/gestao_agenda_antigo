@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Razao social:</strong>
+  <%= @empresa.razao_social %>
+</p>
+
+<p>
+  <strong>Cnpj:</strong>
+  <%= @empresa.cnpj %>
+</p>
+
+<p>
+  <strong>Dt abertura:</strong>
+  <%= @empresa.dt_abertura %>
+</p>
+
+<%= link_to 'Edit', edit_empresa_path(@empresa) %> |
+<%= link_to 'Back', empresas_path %>

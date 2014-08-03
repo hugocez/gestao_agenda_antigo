@@ -1,0 +1,29 @@
+<h1>Listing empresas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Razao social</th>
+      <th>Cnpj</th>
+      <th>Dt abertura</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @empresas.each do |empresa| %>
+      <tr>
+        <td><%= empresa.razao_social %></td>
+        <td><%= empresa.cnpj %></td>
+        <td><%= empresa.dt_abertura %></td>
+        <td><%= link_to 'Show', empresa %></td>
+        <td><%= link_to 'Edit', edit_empresa_path(empresa) %></td>
+        <td><%= link_to 'Destroy', empresa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Empresa', new_empresa_path %>
