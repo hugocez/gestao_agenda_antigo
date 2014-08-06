@@ -1,10 +1,11 @@
-<li>
+<tr>
 		  
-  		<%= link_to funcionario.nome, funcionario %>
-  		<%= link_to funcionario.user_id, funcionario %>
-  		<% if funcionario.user.admin %>
-  		<%else%>
-  		| <%= link_to "delete", funcionario, method: :delete,
+  		<td><%= link_to funcionario.nome, funcionario %></td>
+  		<td><%= link_to funcionario.user.user_name, funcionario %></td>
+  		<td><% if funcionario.user.admin %>
+  			<%else%>
+  				<%= link_to "delete", funcionario, method: :delete,
                                   data: { confirm: "You sure?" } %>
-        <%end%>
-</li>
+        	<%end%>
+        </td>
+</tr>

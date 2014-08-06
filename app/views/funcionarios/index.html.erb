@@ -1,12 +1,24 @@
 <% provide(:title, 'Lista de Funcionarios') %>
 <h1>Lista de funcionarios</h1>
 
-<%= will_paginate %>
 
-<ul class="funcionarios">
-  	<%= render @funcionarios %>
-</ul>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Usuario</th>
+			<th>Deletar</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= will_paginate %>
 
-<%= will_paginate %>
 
-<%= link_to 'New Funcionario', new_funcionario_path %>
+  			<%= render @funcionarios %>
+
+
+		<%= will_paginate %>
+	</tbody>
+</table>
+
+<button type="button" "Incluir Funcionario", class: "btn btn-default"%><%= link_to 'Novo Funcionario', new_funcionario_path %> </button>

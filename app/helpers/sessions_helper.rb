@@ -37,4 +37,11 @@ module SessionsHelper
     self.current_user = nil 
   end
   
+  def signed_in_user
+    redirect_to signin_url, notice: "Por favor, faca o login." unless signed_in?
+  end
+  
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
+  end
 end

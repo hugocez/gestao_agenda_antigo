@@ -64,7 +64,4 @@ class EmpresasController < ApplicationController
       params.require(:empresa).permit(:razao_social, :cnpj, :dt_abertura)
     end
     
-    def signed_in_user
-      redirect_to signin_url, notice: "Por favor, faca o login." unless signed_in?
-    end
 end
